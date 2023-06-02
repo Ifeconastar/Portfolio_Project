@@ -15,11 +15,12 @@ Front-end: HTML, CSS, JavaScript
 Back-end: Laravel (PHP)
 Database: MySQL
 Version Control: Git
-Contributing
-Contributions are welcome! If you have any ideas, suggestions, or improvements for the Movie Catalogue project, please feel free to open an issue or submit a pull request. Your contributions will help make this platform even better!
-Contact
-If you have any questions or inquiries regarding the Movie Catalogue project, please contact:
 
-Ifeconastar
+## Contributing
+Contributions are welcome! If you have any ideas, suggestions, or improvements for the Movie Catalogue project, please feel free to open an issue or submit a pull request. Your contributions will help make this platform even better!
+
+## Contact
+If you have any questions or inquiries regarding the Movie Catalogue project, please contact:
+Author- Ifeconastar
 Email:ifeanyiizuegbu29@gmail.com
-	Thank you for choosing the Movie Catalogue! We hope you enjoy your movie browsing experience.
+## Thank you for choosing the Movie Catalogue! We hope you enjoy your movie browsing experience.
