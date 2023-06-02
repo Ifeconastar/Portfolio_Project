@@ -1,0 +1,82 @@
+/* styles-movies.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  background-color: #ffc107;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff9800;
+}
+
+/* Main content styles */
+main {
+  margin: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
