@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Catalogue - Movie Details</title>
+  <link rel="stylesheet" href="css/movie-detail.css">
+</head>
+<body>
+  <header>
+    <h1>Movie Catalogue</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="registration.html">Signup</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="movie-title">Movie Title</h2>
+    <div class="movie-details">
+      <div class="poster-container">
+        <img id="movie-poster" src="path/to/movie-poster.jpg" alt="Movie Poster">
+      </div>
+      <div class="details-container">
+        <p id="release-date">Release Date</p>
+        <p id="genres">Genres</p>
+        <p id="runtime">Runtime</p>
+        <p id="tagline">Tagline</p>
+        <p id="overview">Overview</p>
+        <p id="status">Status</p>
+        <p id="original-language">Original Language</p>
+        <p id="budget">Budget</p>
+        <p id="revenue">Revenue</p>
+        <p id="spoken-languages">Spoken Languages</p>
+        <p id="vote-average">Vote Average</p>
+        <p id="vote-count">Vote Count</p>
+        <p id="popularity">Popularity</p>
+        <section class="videos-section">
+          <h3>Video</h3>
+          <div id="video-container"></div>
+        </section>
+        <p id="login-message">Please login to rate movies,add movies to watchlist,search for movies and submit reviews.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Movie Catalogue. All rights reserved.</p>
+  </footer>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/movie-detail.js"></script>
+</body>
+</html>
+

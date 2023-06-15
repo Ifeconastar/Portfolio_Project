@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 
 /* Header styles */
@@ -12,8 +11,6 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
-  
-  
 }
 
 header h1 {
@@ -26,7 +23,6 @@ nav {
   padding: 10px;
   text-align: center;
 }
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -59,33 +55,41 @@ main {
   margin: 20px;
 }
 
-section {
-  margin-bottom: 20px;
+form {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-section h2 {
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
   background-color: #333;
   color: #fff;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-section h3 {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-section h4 {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-section p {
-  color: #666;
+input[type="submit"]:hover {
+  background-color: #555;
 }
 
 /* Footer styles */
@@ -94,48 +98,60 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
-  
-  
 }
 
 footer p {
   margin: 0;
 }
 
-/* Movie list styles */
-.movie-list,
-.top-rated-list,
-.upcoming-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0;
+/* Responsive styles for smaller screens */
+@media (max-width: 375px) { /* iPhone SE 375 X 667 */
+  form {
+    max-width: 300px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 12px;
+  }
 }
 
-.movie-list li,
-.top-rated-list li,
-.upcoming-list li {
-  margin: 10px;
-  flex-basis: calc(33.33% - 20px); /* Display three items per row with spacing */
-  max-width: calc(33.33% - 20px); /* Limit the maximum width of each item */
+@media (max-width: 414px) { /* iPhone XR 414 x 896, iPhone 12 Pro 390 x 894 */
+  form {
+    max-width: 350px;
+  }
 }
 
-.movie-list li a,
-.top-rated-list li a,
-.upcoming-list li a {
-  display: block;
-  text-decoration: none;
+@media (max-width: 393px) { /* Pixel 5 393 x 851 */
+  form {
+    max-width: 350px;
+  }
 }
 
-.movie-list li img,
-.top-rated-list li img,
-.upcoming-list li img {
-  width: 100%;
-  height: auto;
+@media (max-width: 360px) { /* Samsung Galaxy S8 360 x 740 */
+  form {
+    max-width: 320px;
+  }
 }
 
+@media (max-width: 412px) { /* Samsung Galaxy S20 Ultra 412 x 915, Samsung Galaxy A51/A71 412 x 914 */
+  form {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 540px) { /* Surface Duo 540 x 720 */
+  form {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 280px) { /* Galaxy Fold 280 x 653 */
+  form {
+    max-width: 240px;
+  }
+}
 /* Media queries for different screen sizes */
 @media (max-width: 375px) {
   /* iPhone SE */
@@ -210,4 +226,5 @@ footer p {
     margin-right: 3px;
   }
 }
+
 

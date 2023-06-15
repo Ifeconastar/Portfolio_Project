@@ -1,5 +1,3 @@
-/* styles-movies.css */
-
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
@@ -30,6 +28,8 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -40,28 +40,33 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
-  background-color: #ffc107;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-  background-color: #ff9800;
+  background-color: #ccc;
+  color: #fff;
 }
 
 /* Main content styles */
 main {
   margin: 20px;
-  text-align: center;
-}
-
-h2 {
-  color: #333;
 }
 
 section {
   margin-bottom: 20px;
+}
+
+section h2,
+section h3,
+section h4 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
 }
 
 section p {
@@ -80,3 +85,48 @@ footer p {
   margin: 0;
 }
 
+/* Movie list styles */
+.movie-list,
+.top-rated-list,
+.upcoming-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.movie-list li,
+.top-rated-list li,
+.upcoming-list li {
+  margin: 10px;
+  flex-basis: calc(33.33% - 20px); /* Display three items per row with spacing */
+  max-width: calc(33.33% - 20px); /* Limit the maximum width of each item */
+}
+
+.movie-list li a,
+.top-rated-list li a,
+.upcoming-list li a {
+  display: block;
+  text-decoration: none;
+}
+
+.movie-list li img,
+.top-rated-list li img,
+.upcoming-list li img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 280px) {
+  /* Galaxy Fold */
+  main {
+    margin-right: 10px; /* Reduce margin to the right */
+  }
+  nav ul li {
+    margin-right: 12px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
