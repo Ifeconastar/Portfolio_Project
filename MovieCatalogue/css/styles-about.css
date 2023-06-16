@@ -74,4 +74,15 @@ footer {
 footer p {
   margin: 0;
 }
+<style>
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+  }
+</style>
 

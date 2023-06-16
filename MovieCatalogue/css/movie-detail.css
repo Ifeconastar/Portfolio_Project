@@ -244,4 +244,15 @@ footer p {
     max-width: calc(100% - 10px); /* Adjust the max-width to fit the width of the poster image */
   }
 }
+<style>
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+  }
+</style>
 

@@ -210,4 +210,15 @@ footer p {
     margin-right: 3px;
   }
 }
+<style>
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+  }
+</style>
 
