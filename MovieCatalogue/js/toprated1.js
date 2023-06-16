@@ -15,7 +15,7 @@ fetch(topRatedUrl)
       
       // Create an anchor element for the movie poster
       const anchor = document.createElement('a');
-      anchor.href = `movie-detail.html?id=${movie.id}`; // Link to the movie details page
+      anchor.href = `/movie-detail?id=${movie.id}`; // Link to the movie details page
       anchor.target = '_blank'; // Open the link in a new tab
       listItem.appendChild(anchor);
       

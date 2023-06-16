@@ -43,7 +43,7 @@ function displaySearchResults(results) {
     movieImage.alt = movie.title;
 
     const movieLink = document.createElement('a');
-    movieLink.href = `movie-detail.html?id=${movie.id}`; // Replace with the appropriate movie details page URL
+    movieLink.href = `/movie-detail?id=${movie.id}`; // Replace with the appropriate movie details page URL
     movieLink.appendChild(movieImage);
     movieLink.appendChild(movieTitle);
 
