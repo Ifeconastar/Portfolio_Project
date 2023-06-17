@@ -244,15 +244,35 @@ footer p {
     max-width: calc(100% - 10px); /* Adjust the max-width to fit the width of the poster image */
   }
 }
-<style>
-  .social-icons {
-    margin-top: 20px;
-  }
 
-  .social-icons a {
-    margin-right: 10px;
-    color: #000;
-    font-size: 20px;
-  }
-</style>
+/* Placeholder styles for updated reviews and rating */
+#updated-reviews {
+  margin-top: 20px;
+}
+
+#updated-rating {
+  margin-top: 20px;
+}
+
+#updated-reviews .review-card {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#updated-reviews .review-card p {
+  margin: 5px 0;
+}
+
+#updated-rating .rating-card {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#updated-rating .rating-card p {
+  margin: 5px 0;
+}
 

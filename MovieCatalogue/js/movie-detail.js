@@ -8,6 +8,33 @@ function getMovieId() {
 }
 
 
+// Retrieve review and rating values from URL query parameters
+const urlParams = new URLSearchParams(window.location.search);
+const reviews = urlParams.get('reviews');
+const rating = urlParams.get('rating');
+
+// Insert the updated review and rating into the respective placeholders
+const updatedReviewsElement = document.getElementById('updated-reviews');
+const updatedRatingElement = document.getElementById('updated-rating');
+
+if (reviews) {
+  // Split the reviews to separate the username and review
+  const [username, review] = reviews.split(':');
+
+  // Update the elements with username and review
+  updatedReviewsElement.innerHTML = `<strong>${username}:</strong> ${review}`;
+} else {
+  // No reviews available
+  updatedReviewsElement.innerHTML = 'No reviews available';
+}
+
+updatedRatingElement.innerText = rating;
+
+
+
+
+
+
 // Select the elements to update
 const movieTitle = document.getElementById('movie-title');
 const moviePoster = document.getElementById('movie-poster');
@@ -69,7 +96,7 @@ fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=6bb00c5182b602ed6d2
   });
   
   // JavaScript code to handle movie rating
-$('.rating-stars .star').on('click', function() {
+  $('.rating-stars .star').on('click', function() {
   var value = $(this).data('value');
 
   // Update the selected rating value
@@ -109,30 +136,35 @@ function removeFromWatchlist() {
   });
 }
 
-// Get the review and rating from the form
-var review = $('#review-text').val();
-var rating = $('.rating-value').text();
+function submitReview() {
+  // Get the username, review, and rating from the form
+  var username = $('#username').val();
+  var review = $('#review-text').val();
+  var rating = $('.rating-value').text();
 
-// Create the data object to send in the AJAX request
-var data = {
-  review: review,
-  rating: rating,
-  movieId: movieId
-};
+  // Create the data object to send in the AJAX request
+  var data = {
+    username: username,
+    review: review,
+    rating: rating,
+    movieId: movieId
+  };
 
-// Send the AJAX request
-$.ajax({
-  url: '/submit_review',
-  type: 'POST',
-  data: data,
-  success: function(response) {
-    // Handle the success response
-    
-    // You can perform any additional actions after successful submission
-  },
-  error: function(error) {
-    
-  }
-});
+  // Send the AJAX request
+  $.ajax({
+    url: '/submit_review',
+    type: 'POST',
+    data: data,
+    success: function(response) {
+      // Handle the success response
+    },
+    error: function(error) {
+      // Handle the error case
+    }
+  });
+}
+
+
+
 
 
