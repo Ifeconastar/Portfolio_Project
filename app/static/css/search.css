@@ -1,0 +1,216 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+/* Main content styles */
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section p {
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Search section styles */
+#search-section {
+  text-align: center;
+}
+
+#search-bar {
+  margin-bottom: 20px;
+}
+
+#search-bar input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-bar button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#search-bar button:hover {
+  background-color: #555;
+}
+
+#filter-options {
+  margin-bottom: 20px;
+}
+
+/* Search results styles */
+#search-results {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+@media (max-width: 375px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 390px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 393px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 394px) and (max-width: 360px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 412px) {
+  .movie-card {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 540px) {
+  .movie-card {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 541px) {
+  .movie-card {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 280px) {
+  /* Galaxy Fold */
+  main {
+    margin-right: 10px; /* Reduce margin to the right */
+  }
+  nav ul li {
+    margin-right: 12px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  #search-bar input[type="text"] {
+    max-width: 200px;
+  }
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+<style>
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+  }
+</style>
+

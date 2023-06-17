@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" href="/static/css/styles-login.css">
+</head>
+<body>
+  <header>
+    <h1>User Login</h1>
+  </header>
+  <nav>
+    <ul class="center">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/registration">Signup</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Movie Catalogue. All rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/static/js/login.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
+

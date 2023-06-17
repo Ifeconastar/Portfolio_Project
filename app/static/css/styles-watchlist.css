@@ -1,0 +1,213 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+  
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+/* Main content styles */
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section h3 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section h4 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section p {
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  
+  
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Movie list styles */
+.movie-list,
+.top-rated-list,
+.upcoming-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.movie-list li,
+.top-rated-list li,
+.upcoming-list li {
+  margin: 10px;
+  flex-basis: calc(33.33% - 20px); /* Display three items per row with spacing */
+  max-width: calc(33.33% - 20px); /* Limit the maximum width of each item */
+}
+
+.movie-list li a,
+.top-rated-list li a,
+.upcoming-list li a {
+  display: block;
+  text-decoration: none;
+}
+
+.movie-list li img,
+.top-rated-list li img,
+.upcoming-list li img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 375px) {
+  /* iPhone SE */
+  nav ul li {
+    margin-right: 5px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 414px) {
+  /* iPhone XR */
+  nav ul li {
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 390px) {
+  /* iPhone 12 Pro */
+  nav ul li {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 393px) {
+  /* Pixel 5 */
+  nav ul li {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Samsung Galaxy S8 */
+  nav ul li {
+    margin-right: 7px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 412px) {
+  /* Samsung Galaxy S20 Ultra */
+  nav ul li {
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 280px) {
+  /* Galaxy Fold */
+  main {
+    margin-right: 10px; /* Reduce margin to the right */
+  }
+  nav ul li {
+    margin-right: 12px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 412px) and (max-height: 914px) {
+  /* Samsung Galaxy A51/A71 */
+  nav ul li {
+    margin-right: 3px;
+  }
+}
+

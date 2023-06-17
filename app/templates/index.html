@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Catalogue</title>
+  <link rel="stylesheet" href="/static/css/styles-index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header, nav, main, footer {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Movie Catalogue</h1>
+    <p>Visitors: {{ visitor_count }}</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+	  <li><a href="/about">About</a></li>
+	  <li><a href="/registration">Signup</a></li>
+	  <li><a href="/login">Login</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Popular Movies</h2>
+	  <ul id="movie-list" class="movie-list"></ul>
+	</section>
+	<section>
+      <h3>Top Rated Movies</h3>
+      <ul id="top-rated-list" class="top-rated-list"></ul>
+    </section>
+	<section>
+	 <h4>Upcoming Movies</h4>
+	 <ul id="upcoming-list" class="upcoming-list"</ul>
+	</section>
+  </main>
+  <footer>
+	  <div class="social-icons">
+  <a href="https://www.linkedin.com/in/ifeanyichukwu-izuegbu-4b5362104/" target="_blank" rel="noopener">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://twitter.com/Ifeconastar_" target="_blank" rel="noopener">
+    <i class="fab fa-twitter"></i>
+  </a>
+  </div>
+  <p>&copy; 2023 Movie Catalogue. All rights reserved.</p>
+  <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+</footer>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/your-script.js"></script>
+  <script src="/static/js/toprated.js"></script>
+  <script src="/static/js/upcoming.js"></script>
+</body>
+</html>
+
